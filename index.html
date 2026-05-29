@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegoCollector - коллекционные наборы LEGO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="images/logo.png" alt="Lego Collectors" width="50">
+        <span>LegoCollector</span>
+    </div>
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#sets">Коллекционные наборы</a>
+        <a href="#why">Почему LEGO</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+</header>
+
+<main>
+    <div class="about" id="about">
+        <img src="images/lego-store.png" alt="Магазин LEGO" class="circular-image">
+        <div class="aboutText">
+            <h3>О компании LegoCollector</h3>
+            <p>Мы — команда энтузиастов, которые собирают LEGO уже более 15 лет. Наша миссия — помочь вам найти редкие коллекционные наборы, которые превратят ваше хобби в настоящее сокровище. У нас только оригинальные наборы, бережная доставка и лучшие цены.</p>
+        </div>
+    </div>
+
+    <div class="collections" id="sets">
+        <h2>Коллекционные наборы LEGO</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/lego-starwars.png" alt="Звездные войны">
+                <h4>Star Wars Millennium Falcon</h4>
+                <p>Культовый корабль из 7541 детали. Идеально для фанатов саги.</p>
+                <span class="price">₽54 990</span>
+                <button>Заказать</button>
+            </div>
+            <div class="card">
+                <img src="images/lego-harry.png" alt="Гарри Поттер">
+                <h4>Harry Potter Hogwarts Castle</h4>
+                <p>Замок Хогвартс. Более 6000 деталей.</p>
+                <span class="price">₽42 990</span>
+                <button>Заказать</button>
+            </div>
+            <div class="card">
+                <img src="images/lego-technic.png" alt="Technic">
+                <h4>LEGO Technic Ferrari</h4>
+                <p>Спортивная модель с работающим двигателем. 3778 деталей.</p>
+                <span class="price">₽39 990</span>
+                <button>Заказать</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="advantages" id="why">
+        <div class="advantage-item">
+            <div class="advantage-text">
+                <h3>Качество и безопасность</h3>
+                <p>Все наборы LEGO проходят строгий контроль качества. Детали идеально совместимы, а материалы безопасны для детей.</p>
+            </div>
+            <img src="images/quality.jpg" alt="Качество LEGO">
+        </div>
+        <div class="advantage-item reverse">
+            <div class="advantage-text">
+                <h3>Инвестиция в будущее</h3>
+                <p>Коллекционные наборы LEGO со временем растут в цене до 30% в год. Это не просто хобби, а надежная инвестиция.</p>
+            </div>
+            <img src="images/investment.jpg" alt="Инвестиции">
+        </div>
+        <div class="advantage-item">
+            <div class="advantage-text">
+                <h3>Сообщество коллекционеров</h3>
+                <p>Вступайте в наш клуб, обменивайтесь наборами, участвуйте в розыгрышах редких экземпляров.</p>
+            </div>
+            <img src="images/community.jpg" alt="Сообщество">
+        </div>
+    </div>
+
+    <div class="contacts" id="contacts">
+        <h2>Свяжитесь с нами</h2>
+        <div class="contact-info">
+            <p><a href="tel:+79998887766">+7 (999) 888-77-66</a></p>
+            <p><a href="mailto:info@legocollector.ru">info@legocollector.ru</a></p>
+            <p>Время работы: Пн-Пт с 10:00 до 20:00, Сб с 11:00 до 18:00</p>
+            <p>Адрес офиса: Москва, ул. Лего-стрит, 42</p>
+            <div class="map">
+                <iframe 
+                    src="https://yandex.ru/map-widget/v1/?ll=37.698966%2C55.773638&z=16.4&pt=37.698966%2C55.773638" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;" 
+                    width="100%" 
+                    height="300" 
+                    frameborder="0">
+                </iframe>
+<div class="feedback-button-container">
+    <button id="openFeedbackBtn" class="feedback-btn">📩 Оставить заявку</button>
+</div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <p>© 2026 LegoCollector. Все права защищены.</p>
+    <p>Все наборы оригинальные. Доставка по всей России.</p>
+</footer>
+
+<script src="js/script.js"></script>
+    <!-- ПРЕЛОАДЕР (анимация загрузки) -->
+    <div id="preloader">
+        <img src="images/preloader.gif" alt="Загрузка страницы">
+    </div>
+    <!-- МОДАЛЬНАЯ ФОРМА ОБРАТНОЙ СВЯЗИ -->
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Обратная связь</h3>
+            <form id="feedbackForm" method="post">
+                <div class="form-group">
+                    <label for="name">Имя *</label>
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
+                </div>
+                
+                <div class="form-group">
+                    <label for="set">Какой набор интересует?</label>
+                    <select id="set" name="set">
+                        <option value="">-- Выберите --</option>
+                        <option>Star Wars Millennium Falcon</option>
+                        <option>Harry Potter Hogwarts Castle</option>
+                        <option>LEGO Technic Ferrari</option>
+                        <option>Другой набор</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Сообщение *</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Ваш вопрос или пожелание..." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                        Подписаться на новинки LEGO
+                    </label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Отправить заявку</button>
+                <p class="form-note">* — поля обязательные для заполнения</p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
